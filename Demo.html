@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style>
+		ul,li,img,span,div{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	clear:both;
+	content:"";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+#demo{
+	position:relative;
+	width:856px;
+	margin-left:20px;
+	margin-top:20px;
+	background:#F0F0F0;
+	border:1px solid #ccc;
+}
+#left{
+	float:left;
+	margin-left:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#left li{
+	width:120px;
+	height:80px;
+	border:1px solid #ccc;
+	cursor: pointer;
+}
+#left li:nth-child(1){
+	background:#fff;
+}
+#left li img{
+	width:32px;
+	height:32px;
+	margin-left:44px;
+	margin-top:10px;
+}
+#left li span{
+	display: inline-block;
+	margin-top:5px;
+	margin-left:27px;
+	font-weight: bold;
+}
+#left li:nth-child(2){
+	border-top:none;
+	border-bottom:none;
+}
+#left li:nth-child(3){
+	border-bottom:none;
+}
+#right{
+	float:right;
+	width:720px;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-right:5px;
+}
+#right>div{
+	width:100%;
+	border:1px solid #ccc;
+	display:none;
+}
+#right>div:nth-child(1){
+	display:block;
+}
+#right>div>img{
+	display:none;
+	width:100%;
+	height:323px;
+}
+#right>div>img:nth-child(1){
+	display:block;
+}
+#right>div>ul{
+	position:absolute;
+	top:309px;
+}
+#right>div>ul>li{
+	float:left;
+	border:1px solid #ccc;
+	background:#000;
+	text-align:center;
+	color:#fff;
+    opacity:0.7; 
+    cursor: pointer;     
+}
+#right>div>ul>li:nth-child(1){
+	background:red;
+}
+.three-li>ul>li{
+    width:238px; 
+}
+.four-li>ul>li{
+	width:178px;
+}
+.five-li>ul>li{
+	width:142px;
+}
+.two-li>ul>li{
+	width:358px;
+}
+</style>
+</head>
+<body>
+	<div id="demo" class="clearfix">
+		<ul id="left">
+			<li>
+			    <img src="img3/科技.png" alt="" />
+			    <span>数码科技</span>
+			</li>
+			<li>
+			    <img src="img3/电影.png" alt="" />
+			    <span>电影电视</span>
+			</li>
+			<li>
+			    <img src="img3/娱乐.png" alt="" />
+			    <span>娱乐综艺</span>
+			</li>
+			<li>
+			    <img src="img3/体育.png" alt="" />
+			    <span>体育赛事</span>
+			</li>
+		</ul>
+		<div id="right">
+			<div class="three-li" >			  
+			  	    <img src="img3/KJ-1.png" alt="" />
+			  	    <img src="img3/KJ-2.jpg" alt="" />
+			  	    <img src="img3/KJ-3.png" alt="" />
+			  	    <ul>
+			  		    <li>Zealer:MacOS安装教程</li>
+			  		    <li>马斯克:人类将移民火星</li>
+			  		    <li>全球首辆飞行汽车已合法上路</li>
+			  	    </ul>
+			</div>
+		    <div class="four-li" >			  
+		    		<img src="img3/YS-1.jpg" alt="" />
+		    		<img src="img3/YS-2.jpg" alt="" />
+		    		<img src="img3/YS-3.jpg" alt="" />
+		    		<img src="img3/YS-4.jpg" alt="" />
+		    		<ul>
+		    		 <li>变5:最后的骑士</li>
+		    		 <li>重新开播:《白鹿原》</li>
+		    		 <li>DC:神奇女侠</li>
+		    		 <li>欢乐颂2来袭</li>
+		    		</ul>
+		    </div>
+		    <div class="five-li" >			  
+		   		    <img src="img3/YL-1.jpg" alt="" />
+		   		    <img src="img3/YL-2.jpg" alt="" />
+		   		    <img src="img3/YL-3.jpg" alt="" />
+		   		    <img src="img3/YL-4.jpg" alt="" />
+		   		    <img src="img3/YL-5.jpg" alt="" />
+		   		    <ul>
+		   			    <li>奔跑吧兄弟:第五季</li>
+		   			    <li>安以轩归宁宴</li>
+		   			    <li>奇葩说:说奇葩事</li>
+		   			    <li>起小点:top10</li>
+		   			    <li>韩流在中继续萎靡</li>
+		   		    </ul>
+            </div>
+		    <div class="two-li" >			  
+			  	<img src="img3/TY-1.jpg" alt="" />
+			  	<img src="img3/TY-2.jpg" alt="" />
+			    <ul>
+			  		<li>国乒集体发声：“我们无心恋战,只因想念刘国梁”</li>
+			  		<li>联合会杯：C罗头球，葡萄牙1:0俄罗斯</li>
+			  	</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	window.onload = function(){
+	var oLeft = document.getElementById('left');
+	var oRight =document.getElementById('right');
+    var aLeftLi = oLeft.getElementsByTagName('li');
+    var aDiv = oRight.getElementsByTagName('div');
+
+	for(var i=0; i<aLeftLi.length;i++){
+		aLeftLi[i].index = i;
+		aLeftLi[i].onclick =function(){
+            for(var i=0;i<aLeftLi.length;i++){
+               aLeftLi[i].style.background = '#F0F0F0';
+               aDiv[i].style.display = 'none';
+            }
+            this.style.background = '#fff';
+           aDiv[this.index].style.display = 'block';
+		}	
+	}
+		
+    for(var i=0;i<aDiv.length;i++){
+    	fnRight(aDiv[i]);
+    }
+    function fnRight(sli){
+    	var aImg = sli.getElementsByTagName('img');
+        var aLi = sli.getElementsByTagName('li');
+        for(var i=0;i<aLi.length;i++){
+    	    aLi[i].index =i;
+    	    aLi[i].onclick = function(){
+    		    for(var i=0;i< aLi.length;i++){
+    			    aLi[i].style.background = '#000';
+    			    aImg[i].style.display ='none';
+    		    }
+    		    this.style.background = 'red';
+    		    aImg[this.index].style.display='block';
+    	    }
+        }
+    }
+}
+</script>
+</html>
